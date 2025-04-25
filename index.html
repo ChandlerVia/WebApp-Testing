@@ -1,12 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My First Page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dropdown Saver</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <p>This is my first HTML page.</p>
+  <h1>Select Your Favorite Fruit</h1>
+
+  <select id="fruitSelect">
+    <option value="">-- Choose a fruit --</option>
+    <option value="apple">Apple</option>
+    <option value="banana">Banana</option>
+    <option value="cherry">Cherry</option>
+  </select>
+
+  <button id="saveBtn">Save</button>
+
+  <p id="message"></p>
+
+  <script src="app.js"></script>
 </body>
 </html>
