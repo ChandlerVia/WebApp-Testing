@@ -1,13 +1,15 @@
 const categorySelect = document.getElementById('categorySelect');
 const subSelect = document.getElementById('subSelect');
 const subSelectContainer = document.getElementById('subSelectContainer');
+const weightSelect = document.getElementById('weightSelect');
+const repSelect = document.getElementById('repSelect');
 const message = document.getElementById('message');
 const saveBtn = document.getElementById('saveBtn');
 
 // Option map
 const optionsMap = {
-  fruits: ['Apple', 'Banana', 'Cherry'],
-  colors: ['Red', 'Green', 'Blue']
+  Shoulders: ['Dumbbell Shoulder Press', 'Dumbell Lateral Raise', 'Dumbbell Shrug'],
+  Legs: ['Machine Leg Extension', 'Leg Press', 'Hack Squat']
 };
 
 // When category changes
@@ -37,11 +39,13 @@ categorySelect.addEventListener('change', () => {
 saveBtn.addEventListener('click', () => {
   const category = categorySelect.value;
   const subOption = subSelect.value;
+  const weight = weightSelect.value;
+  const reps = repSelect.value;
 
-  if (category && subOption) {
-    localStorage.setItem('selection', JSON.stringify({ category, subOption }));
-    message.textContent = `Saved: ${category} → ${subOption}`;
+  if (category && subOption && weight && reps) {
+    localStorage.setItem('selection', JSON.stringify({category, subOption, weight, reps}));
+    message.textContent = `Saved: ${category} → ${subOption}, ${weight}, ${reps}`;
   } else {
-    message.textContent = 'Please select both options.';
+    message.textContent = 'Please select all options.';
   }
 });

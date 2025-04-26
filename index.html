@@ -6,20 +6,62 @@
   <title>Dynamic Dropdown</title>
 </head>
 <body>
-  <h1>Choose a Category</h1>
+  <h1>Choose a day</h1>
 
-  <label for="categorySelect">Category:</label>
+  <label for="categorySelect">Workout Routine:</label>
   <select id="categorySelect">
     <option value="">-- Select --</option>
-    <option value="fruits">Fruits</option>
-    <option value="colors">Colors</option>
+    <option value="Shoulders">Shoulders</option>
+    <option value="Legs">Legs</option>
   </select>
 
   <div id="subSelectContainer" style="display: none; margin-top: 1rem;">
-    <label for="subSelect">Options:</label>
+    <label for="subSelect">Workout:</label>
     <select id="subSelect"></select>
-    <button id="saveBtn">Save</button>
+    <button id="saveBtn">Add to Log</button>
   </div>
+
+  <label for="weightSelect">Weight:</label>
+  <select id="weightSelect">
+    <option value="">-- Select --</option>
+    <option value="10">10</option>
+    <option value="15">15</option>
+    <option value="20">20</option>
+    <option value="25">25</option>
+    <option value="30">30</option>
+    <option value="35">35</option>
+    <option value="40">40</option>
+    <option value="45">45</option>
+    <option value="50">50</option>
+    <option value="55">55</option>
+    <option value="60">60</option>
+    <option value="65">65</option>
+    <option value="70">70</option>
+    <option value="75">75</option>
+    <option value="80">80</option>
+    <option value="85">85</option>
+    <option value="90">90</option>
+  </select>
+
+  <label for="repSelect">Reps:</label>
+  <select id="repSelect">
+    <option value="">-- Select --</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+    <option value="13">13</option>
+    <option value="14">14</option>
+    <option value="15">15</option>
+  </select>
 
   <p id="message"></p>
 
