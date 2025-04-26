@@ -1,14 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,h2{
+  font-family: 'Monserrat', sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
 body {
   font-family: sans-serif;
-  padding: 2rem;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 14px;
+  min-height: 100vh;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 
 select, button {
   margin-top: 1rem;
   font-size: 1rem;
   padding: 0.5rem;
-  white-space: pre-line;
 }
 
 button {
