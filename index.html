@@ -3,20 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dropdown Saver</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Dynamic Dropdown</title>
 </head>
 <body>
-  <h1>Select Your Favorite Fruit</h1>
+  <h1>Choose a Category</h1>
 
-  <select id="fruitSelect">
-    <option value="">-- Choose a fruit --</option>
-    <option value="apple">Apple</option>
-    <option value="banana">Banana</option>
-    <option value="cherry">Cherry</option>
+  <label for="categorySelect">Category:</label>
+  <select id="categorySelect">
+    <option value="">-- Select --</option>
+    <option value="fruits">Fruits</option>
+    <option value="colors">Colors</option>
   </select>
 
-  <button id="saveBtn">Save</button>
+  <div id="subSelectContainer" style="display: none; margin-top: 1rem;">
+    <label for="subSelect">Options:</label>
+    <select id="subSelect"></select>
+    <button id="saveBtn">Save</button>
+  </div>
 
   <p id="message"></p>
 
